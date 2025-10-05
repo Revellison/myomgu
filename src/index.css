@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'Rubik';
+  src: url('/fonts/Rubik-VariableFont.ttf') format('truetype');
+}
+
+:root {
+  font-family: 'Rubik', sans-serif;
+  color-scheme: light dark;
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #ffffff;
+    background-color: #000000;
+  }
+}
