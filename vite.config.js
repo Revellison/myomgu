@@ -17,7 +17,9 @@ export default defineConfig({
         name: 'Мой ОмГУ',
         short_name: 'myomgu',
         description: 'Приложение для управления личным кабинетом ОмГУ',
-        theme_color: '#ffffff',
+        theme_color: '#00000000',
+        background_color: '#ffffff',
+        display: 'standalone',
         icons: [
           {
             src: 'icon-192.png',
