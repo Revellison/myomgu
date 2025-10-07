@@ -7,6 +7,17 @@ html, body {
   margin: 0;
 }
 
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+*:focus {
+  outline: none;
+}
+
+*::selection {
+  background: transparent;
+}
 
 body {
   font-family: 'Rubik', sans-serif;

@@ -15,10 +15,10 @@ export default defineConfig({
       ],
       manifest: {
         name: 'Мой ОмГУ',
-        short_name: 'myomgu',
+        short_name: 'Мой ОмГУ',
         description: 'Приложение для управления личным кабинетом ОмГУ',
-        theme_color: '#00000000',
-        background_color: '#ffffff',
+        theme_color: '#FEFEFE',
+        background_color: '#FEFEFE',
         display: 'standalone',
         icons: [
           {
@@ -27,7 +27,7 @@ export default defineConfig({
             type: 'image/png'
           },
           {
-            src: 'icon-.png',
+            src: 'icon-512.png',
             sizes: '512x512',
             type: 'image/png'
           },
