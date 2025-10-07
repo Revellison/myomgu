@@ -9,7 +9,7 @@ function UserCard() {
             <img className={styles.profileAvatar} src="images/avatar/avatar.jpg" alt="Аватар профиля" />
             <div className={styles.profileLN}> {/* Profile Login-Name */}
                 <h1>Revellison</h1>
-                <p>Акимов Олег Николаевич</p>    
+                <p>Евлампий Олег Николаевич</p>    
             </div>
         </div>
         <div className={styles.profileInfo}>

@@ -3,9 +3,16 @@
   src: url('/fonts/Rubik-VariableFont.ttf') format('truetype');
 }
 
+@media all and (display-mode: standalone) {
+  html, body {
+    overscroll-behavior-y: contain;
+  }
+}
+
 html, body {
   margin: 0;
 }
+
 
 * {
   -webkit-tap-highlight-color: transparent;
