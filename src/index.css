@@ -39,8 +39,9 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
+    --iconColor: #1d1d1b;
     --background: #FEFEFE;
     --foreground: #F2F2F3;
     --color: #000000;
@@ -49,8 +50,9 @@ body {
   }
 }
 
-@media (prefers-color-scheme: light) {
+@media (prefers-color-scheme: dark) {
   :root {
+    --iconColor: #FEFEFE;
     --color: #E3E3E3;
     --background: #191919;
     --foreground: #121212;
