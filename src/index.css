@@ -61,8 +61,8 @@ body {
   :root {
     --iconColor: #FEFEFE;
     --color: #E3E3E3;
-    --background: #191919;
-    --foreground: #121212;
+    --background: #121212;
+    --foreground: #191919;
     --foreground-text: #c2c2c2;
   }
 }

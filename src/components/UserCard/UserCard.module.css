@@ -1,18 +1,30 @@
+@keyframes ScaleIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1)
+    }
+}
+
 .UserCard {
-    background-color: var(--foreground);
+    background-color: var(--background);
     display: flex;
-    padding: 10px;
+    padding: 0px;
     border-radius: 20px;
     flex-direction: column;
     gap: 6px;
     & .profileLAN {
         padding: 10px 8px;
         border-radius: 16px;
-        background-color: var(--background);
+        background-color: var(--foreground);
         display: flex;
         flex-direction: row;
         height: 95px;
-        gap: 20px;
+        gap: 15px;
+        animation: ScaleIn 0.4s ease;
         & h1, p{
             margin: 0;
         }
@@ -40,14 +52,16 @@
         gap: 6px;
         display: flex;
         flex-direction: column; 
+        border-radius: 20px;
+        padding: 10px;
+        background-color: var(--foreground);
+        animation: ScaleIn 0.6s ease;
         & .profileInfoDiv {
             display: flex;
             flex-direction: row;
-            gap: 6px;
+            gap: 0px;
             & .profileGroup, & .profileWell {
-                border-radius: 16px;
                 padding-top: 5px;
-                background-color: var(--background);
                 width: 50%;
                 text-align: center;
                 & h1 {
@@ -61,9 +75,7 @@
             }
         }
         & .profileSpeciality {
-            border-radius: 16px;
             padding: 10px 6px;
-            background-color: var(--background);
             text-align: center;
             & span {
                 font-size: 15px;

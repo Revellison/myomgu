@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from "react";
 import styles from "./Header.module.css"; 
 import Logo from './Logo';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSearch, faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
+import { faSearch, faBars, faXmark, faGear, faCompass, faUser } from '@fortawesome/free-solid-svg-icons';
 
 function Header() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
