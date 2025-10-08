@@ -21,7 +21,7 @@ function Header() {
 
       if (isSidebarOpen && e.target.closest(`.${styles.sidebar}`)) {
         touching = true;
-      } else if (!isSidebarOpen && startX < 70) {
+      } else if (!isSidebarOpen && startX < 100) {
         touching = true;
       } else {
         touching = false;
@@ -75,9 +75,12 @@ function Header() {
         className={styles.sidebar}
         style={{ transform: isSidebarOpen ? "translateX(0)" : "translateX(-100%)" }}
       >
-        <button className={styles.closeButton} onClick={() => setIsSidebarOpen(false)}>
-          <FontAwesomeIcon icon={faXmark} size="2x"/>
-        </button>
+        <div className={styles.SideBarTop}>
+            <Logo/>
+          <button className={styles.closeButton} onClick={() => setIsSidebarOpen(false)}>
+            <FontAwesomeIcon icon={faXmark} size="2x"/>
+          </button>
+        </div>
         <nav className={styles.nav}>
           <a href="#">Главная</a>
           <a href="#">Профиль</a>

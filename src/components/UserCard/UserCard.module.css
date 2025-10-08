@@ -1,7 +1,7 @@
 @keyframes ScaleIn {
     0% {
         opacity: 0;
-        transform: scale(0.8);
+        transform: scale(0.9);
     }
     100% {
         opacity: 1;
@@ -11,22 +11,27 @@
 
 .UserCard {
     background-color: var(--background);
+
     display: flex;
-    padding: 0px;
     border-radius: 20px;
     flex-direction: column;
-    gap: 6px;
     & .profileLAN {
-        padding: 10px 8px;
-        border-radius: 16px;
-        background-color: var(--foreground);
         display: flex;
-        flex-direction: row;
-        height: 95px;
-        gap: 15px;
-        animation: ScaleIn 0.4s ease;
+        flex-direction: column;
+        height: fit-content;
         & h1, p{
             margin: 0;
+        }
+        & .profileLANTop {
+            background-color: var(--foreground);
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+            border-top-right-radius: 20px;
+            border-bottom-right-radius: 20px;
+            display: flex;
+            flex-direction: row;
+            gap: 10px;
+            animation: ScaleIn 0.3s ease;
         }
         & .profileAvatar {
             width: 95px;
@@ -38,49 +43,81 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
+            gap: 4px;
             & h1 {
-                font-size: 24px;
+                font-size: 20px;
+                overflow: auto;
             }
             & p {
-                font-size: 14px;
+                font-size: 13px;
                 color: var(--foreground-text);
+            }
+        }
+
+        & .profileInfoDiv {
+            padding: 10px;
+            padding-left: 0;
+
+            & h1, h2 {
+                padding: 8px 10px 7px 10px;
+                background-color: var(--foreground);
+                border-radius: 99px;
+                width: fit-content;
+                height: fit-content;
+                transition: transform 0.2s ease;
+                text-align: center;
+                &:hover {
+                   transform: scale(1.05);
+                }
+            }
+            & .profileInfoDivWellGroup {
+                display: flex;
+                flex-direction: row;
+                height: fit-content;
+                gap: 7px;
+            }
+            & .profileInfoSpecialityMore {
+                display: flex;
+                flex-direction: row;
+                height: fit-content;
+                align-items: center;
+                gap: 10px;
+                & a, & h2 {
+                        margin: 0;
+                        margin-top: 10px;
+                }
+                & .profileMore {
+                    text-decoration: underline 1px;
+                    color: var(--text-color);
+                    height: fit-content;
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    gap: 5px;
+                    padding: 7px 10px 7px 10px;
+                    background-color: var(--foreground);
+                    border-radius: 99px;
+                    & h2 {
+                        margin: 0;
+                        padding: 0;
+                    }
+                }
+                & svg {
+                    color: var(--color);
+                    height: fit-content;
+                }
+            }
+            & h1 {
+                font-size: 19px;
+                animation: ScaleIn 0.3s ease;
+                @media screen and (max-width:330px) {font-size: 17px;}
+            }
+            & h2 {
+                animation: ScaleIn 0.3s ease;
+                font-size: 19px;
+                @media screen and (max-width:330px) {font-size: 17px;}
             }
         }
     }
     
-    & .profileInfo {
-        gap: 6px;
-        display: flex;
-        flex-direction: column; 
-        border-radius: 20px;
-        padding: 10px;
-        background-color: var(--foreground);
-        animation: ScaleIn 0.6s ease;
-        & .profileInfoDiv {
-            display: flex;
-            flex-direction: row;
-            gap: 0px;
-            & .profileGroup, & .profileWell {
-                padding-top: 5px;
-                width: 50%;
-                text-align: center;
-                & h1 {
-                    font-size: 20px;
-                }  
-
-                & span {
-                    font-size: 13px;
-                    color: var(--foreground-text);
-                }
-            }
-        }
-        & .profileSpeciality {
-            padding: 10px 6px;
-            text-align: center;
-            & span {
-                font-size: 15px;
-                text-align: center;
-            }
-        }
-    }
 }

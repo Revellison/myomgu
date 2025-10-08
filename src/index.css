@@ -48,12 +48,14 @@ body {
 
 @media (prefers-color-scheme: light) {
   :root {
+    --ultra-accent: #990000;
     --iconColor: #1d1d1b;
     --background: #FEFEFE;
     --foreground: #F2F2F3;
     --color: #000000;
-    --foreground-text: #8d8d8d;
+    --foreground-text: #696969;
     --foreground-text-dark: #111111;
+    --border: #a1a1a142;
   }
 }
 
@@ -64,5 +66,7 @@ body {
     --background: #121212;
     --foreground: #191919;
     --foreground-text: #c2c2c2;
+    --border: #838383;
+    --ultra-accent: #990000;
   }
 }

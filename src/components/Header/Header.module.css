@@ -82,7 +82,7 @@
   width: 250px;
   height: 100%;
   background-color: var(--background);
-  padding: 20px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   transition: transform 0.3s ease;
@@ -113,4 +113,24 @@
 
 .nav a:hover {
   color: var(--foreground-text-dark);
+}
+
+@keyframes Rotate {
+0% { transform: rotate(0deg); }           /* Начало */
+  50% { transform: rotate(180deg); }        /* Полный поворот за половину времени */
+  50.1% { transform: rotate(180deg); }      /* Сброс или удержание на месте */
+  100% { transform: rotate(180deg); }       /* Конец (без изменений) */
+}
+
+.SideBarTop {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  & button {
+    margin-bottom: 0;
+    height: 100%;
+    animation: Rotate 5s ease infinite;
+  }
 }
