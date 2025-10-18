@@ -116,10 +116,10 @@
 }
 
 @keyframes Rotate {
-0% { transform: rotate(0deg); }           /* Начало */
-  50% { transform: rotate(180deg); }        /* Полный поворот за половину времени */
-  50.1% { transform: rotate(180deg); }      /* Сброс или удержание на месте */
-  100% { transform: rotate(180deg); }       /* Конец (без изменений) */
+  0% { transform: rotate(0deg); }       
+  50% { transform: rotate(180deg); } 
+  50.1% { transform: rotate(180deg); }
+  100% { transform: rotate(180deg); }
 }
 
 .SideBarTop {

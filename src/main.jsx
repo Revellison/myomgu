@@ -1,7 +1,9 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import Header from './components/Header/Header'
-import UserCard from './components/UserCard/UserCard'
+import UserCard from './components/home/UserCard/UserCard'
+import Watermark from './components/Watermark/Watermark'
+import ClassCard from './components/home/ClassCard/ClassCard'
 import './index.css'
 
 const themeColorMeta = document.querySelector('meta[name="theme-color"]');
@@ -23,5 +25,7 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Header/>
     <UserCard/>
+    <ClassCard/>
+    <Watermark/>
   </StrictMode>,
 )

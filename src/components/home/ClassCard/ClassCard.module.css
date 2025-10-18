@@ -1,0 +1,114 @@
+/* src/components/NextClassCard/NextClassCard.module.css */
+
+.cardLink {
+  text-decoration: none;
+  display: block;
+  /* Увеличиваем вертикальные отступы для выделения карточки */
+  margin: 15px 0; 
+  /* Важно: ограничим максимальную ширину для десктопа, чтобы она не растягивалась */
+  max-width: 600px;
+}
+
+.card {
+  /* Фон соответствует твоим фреймам: очень темный серый */
+  background-color: #1a1a1a; 
+  border-radius: 12px;
+  padding: 20px;
+  color: #f0f0f0;
+  /* Мягкая тень, как в твоих других компонентах */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: box-shadow 0.2s;
+  display: flex;
+  flex-direction: row; /* Используем Flexbox для горизонтального расположения */
+  align-items: center;
+  position: relative; /* Для позиционирования иконки ссылки */
+}
+
+.card:hover {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+/* --- Иконка предмета --- */
+.iconWrapper {
+  /* Размер иконки, как на скриншоте */
+  width: 70px; 
+  height: 70px;
+  border-radius: 8px; /* Слегка скругленный квадрат */
+  background-color: #2c2c2c; /* Цвет фона иконки */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  /* Синяя рамка (похоже на выделение в макете) */
+  /* border: 1px solid #007aff;  */
+}
+
+.iconContent {
+  /* Цвет иконки (почти белый/светло-серый) */
+  color: #c0c0c0; 
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+/* --- Контент (Заголовок и Тип) --- */
+.content {
+  /* Занимает всю доступную ширину между иконкой и временем */
+  flex-grow: 1; 
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
+  color: #ffffff;
+}
+
+.type {
+  font-size: 1rem;
+  color: #aaaaaa; /* Светло-серый для типа */
+  margin: 4px 0 0 0;
+}
+
+/* --- Футер/Время начала --- */
+.footer {
+  /* Выравниваем элемент по правому краю контейнера */
+  margin-left: auto; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100%; /* Занимает всю высоту для правильного выравнивания времени */
+  text-align: right;
+  padding-left: 10px;
+}
+
+.startTime {
+  font-size: 1.1rem;
+  color: #f0f0f0; /* Время белым, как на скриншоте */
+  font-weight: 500;
+  margin: 0;
+  /* Сдвигаем время вниз, чтобы оно было в правом нижнем углу */
+  margin-top: auto; 
+}
+
+/* --- Иконка внешней ссылки [↗] --- */
+.linkButton {
+  position: absolute; /* Позиционируем абсолютно в углу */
+  top: 15px;
+  right: 15px;
+  color: #aaaaaa;
+  transition: color 0.2s;
+  padding: 5px;
+  line-height: 1;
+}
+
+.linkButton:hover {
+  color: #ffffff; /* Белый при наведении */
+}
+
+.externalLinkIcon {
+  width: 22px;
+  height: 22px;
+  stroke: currentColor;
+}

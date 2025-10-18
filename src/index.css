@@ -11,6 +11,7 @@
 
 html, body {
   margin: 0;
+  
 }
 
 
@@ -25,6 +26,8 @@ html, body {
 *::selection {
   background: transparent;
 }
+
+
 
 body {
   font-family: 'Rubik', sans-serif;
@@ -62,9 +65,9 @@ body {
 @media (prefers-color-scheme: dark) {
   :root {
     --iconColor: #FEFEFE;
-    --color: #E3E3E3;
+    --color: #D9D9D9;
     --background: #121212;
-    --foreground: #191919;
+    --foreground: #242424;
     --foreground-text: #c2c2c2;
     --border: #838383;
     --ultra-accent: #990000;

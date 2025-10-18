@@ -19,11 +19,13 @@
         display: flex;
         flex-direction: column;
         height: fit-content;
+        background-color: var(--foreground);
+        padding: 10px;
+        border-radius: 16px;
         & h1, p{
             margin: 0;
         }
         & .profileLANTop {
-            background-color: var(--foreground);
             border-top-left-radius: 50px;
             border-bottom-left-radius: 50px;
             border-top-right-radius: 20px;
@@ -32,10 +34,11 @@
             flex-direction: row;
             gap: 10px;
             animation: ScaleIn 0.3s ease;
+            padding-bottom: 15px;
         }
         & .profileAvatar {
-            width: 95px;
-            height: 95px;
+            width: 75px;
+            height: 75px;
             border-radius: 99px;
             border: 1px solid rgba(0, 0, 0, 0.13);
         }
@@ -45,11 +48,11 @@
             justify-content: center;
             gap: 4px;
             & h1 {
-                font-size: 20px;
+                font-size: 19px;
                 overflow: auto;
             }
             & p {
-                font-size: 13px;
+                font-size: 14px;
                 color: var(--foreground-text);
             }
         }
@@ -60,8 +63,9 @@
 
             & h1, h2 {
                 padding: 8px 10px 7px 10px;
-                background-color: var(--foreground);
+                background-color: var(--color);
                 border-radius: 99px;
+                color: var(--background);
                 width: fit-content;
                 height: fit-content;
                 transition: transform 0.2s ease;
@@ -108,13 +112,15 @@
                 }
             }
             & h1 {
-                font-size: 19px;
+                font-size: 17px;
+                font-weight: 500;
                 animation: ScaleIn 0.3s ease;
                 @media screen and (max-width:330px) {font-size: 17px;}
             }
             & h2 {
                 animation: ScaleIn 0.3s ease;
-                font-size: 19px;
+                font-size: 17px;
+                font-weight: 500;
                 @media screen and (max-width:330px) {font-size: 17px;}
             }
         }
