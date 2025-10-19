@@ -112,13 +112,13 @@
                 font-size: 17px;
                 font-weight: 500;
                 animation: ScaleIn 0.3s ease;
-                @media screen and (max-width:330px) {font-size: 17px;}
+                @media screen and (max-width:330px) {font-size: 15px;}
             }
             & h2 {
                 animation: ScaleIn 0.3s ease;
                 font-size: 17px;
                 font-weight: 500;
-                @media screen and (max-width:330px) {font-size: 17px;}
+                @media screen and (max-width:330px) {font-size: 15px;}
             }
         }
     }

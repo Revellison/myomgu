@@ -1,9 +1,8 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import Header from './components/Header/Header'
-import UserCard from './components/home/UserCard/UserCard'
+import Home from './pages/Home/home'
 import Watermark from './components/Watermark/Watermark'
-import ClassCard from './components/home/ClassCard/ClassCard'
 import './index.css'
 
 
@@ -34,8 +33,7 @@ darkQuery.addEventListener('change', updateTheme);
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Header/>
-    <UserCard/>
-    <ClassCard/>
+    <Home/>
     <Watermark/>
   </StrictMode>,
 )
