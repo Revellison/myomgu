@@ -6,20 +6,30 @@ import Watermark from './components/Watermark/Watermark'
 import ClassCard from './components/home/ClassCard/ClassCard'
 import './index.css'
 
-const themeColorMeta = document.querySelector('meta[name="theme-color"]');
-const darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
 
-function updateThemeColor(e) {
-  if (e.matches) {
-    themeColorMeta.setAttribute('content', '#191919'); 
+function updateTheme() {
+  const themeColorMeta = document.querySelector('meta[name="theme-color"]');
+  const msThemeMeta = document.querySelector('meta[name="msapplication-navbutton-color"]');
+  const darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
+  
+  if (darkQuery.matches) {
+    themeColorMeta.setAttribute('content', '#121212');
+    if (msThemeMeta) {
+      msThemeMeta.setAttribute('content', '#121212');
+    }
+    document.documentElement.style.setProperty('--status-bar-bg', '#121212');
   } else {
-    themeColorMeta.setAttribute('content', '#FEFEFE'); 
+    themeColorMeta.setAttribute('content', '#FEFEFE');
+    if (msThemeMeta) {
+      msThemeMeta.setAttribute('content', '#FEFEFE');
+    }
+    document.documentElement.style.setProperty('--status-bar-bg', '#FEFEFE');
   }
 }
 
-updateThemeColor(darkQuery);
-darkQuery.addEventListener('change', updateThemeColor);
-
+const darkQuery = window.matchMedia('(prefers-color-scheme: dark)');
+updateTheme();
+darkQuery.addEventListener('change', updateTheme);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

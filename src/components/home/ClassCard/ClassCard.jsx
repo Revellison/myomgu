@@ -1,4 +1,3 @@
-// src/components/NextClassCard/NextClassCard.jsx
 import React from 'react';
 import styles from './ClassCard.module.css';
 
@@ -45,42 +44,9 @@ const ExternalLinkIcon = () => (
 );
 
 const ClassCard = ({ classData }) => {
-  // Деструктурируем данные из пропсов
-  // Используем значения по умолчанию на случай, если данные еще не пришли с API
-  const { 
-    title = 'Занятие', 
-    type = 'лекция', 
-    startTime = '00:00', 
-    link = '#', 
-    icon = '?' 
-  } = classData || {};
 
   return (
-    // Вся карточка является ссылкой для удобства
-    <a href={link} className={styles.cardLink}>
-      <div className={styles.card}>
-        
-        {/* 1. Иконка предмета и Иконка внешней ссылки */}
-        <SubjectIcon icon={icon} />
-        
-        {/* Иконка внешней ссылки позиционируется абсолютно внутри .card */}
-        <a href={link} className={styles.linkButton} aria-label="Перейти к занятию">
-          <ExternalLinkIcon />
-        </a>
-        
-        {/* 2. Контент: Название и Тип */}
-        <div className={styles.content}>
-          <h3 className={styles.title}>{title}</h3>
-          <p className={styles.type}>{type}</p>
-        </div>
-
-        {/* 3. Футер: Время начала (прижато вправо) */}
-        <div className={styles.footer}>
-          <p className={styles.startTime}>Начало в {startTime}</p>
-        </div>
-        
-      </div>
-    </a>
+    <h1>ky</h1>
   );
 };
 

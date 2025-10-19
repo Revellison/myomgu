@@ -20,6 +20,7 @@ export default defineConfig({
         theme_color: '#FEFEFE',
         background_color: '#FEFEFE',
         display: 'standalone',
+        categories: ['education', 'productivity'],
         icons: [
           {
             src: 'icon-192.png',

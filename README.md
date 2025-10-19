@@ -43,8 +43,8 @@
 
 1.  **Клонируйте репозиторий:**
     ```bash
-    git clone [URL_ВАШЕГО_РЕПОЗИТОРИЯ]
-    cd myomgu-project
+    git clone https://github.com/Revellison/myomgu
+    cd myomgu
     ```
 2.  **Запустите все сервисы через Docker Compose:**
     ```bash
