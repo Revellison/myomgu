@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import styles from "./UserCard.module.css"; 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faCircleInfo} from '@fortawesome/free-solid-svg-icons';
+import {faArrowUpRightFromSquare} from '@fortawesome/free-solid-svg-icons';
 function UserCard() {
  return (
+<a className={styles.UserCardLink} href="">
     <div className={styles.UserCard}>
         <div className={styles.profileLAN}> {/* Profile Login-Avatar-Name */}
-        <div className={styles.MoreInfoButton}>
-            {/*<button>больше информации</button>*/}
-        </div>
+        <FontAwesomeIcon className={styles.classCardLink} icon={faArrowUpRightFromSquare}/>
             <div className={styles.profileLANTop}>    
                 <img className={styles.profileAvatar} src="images/avatar/avatar.jpg" alt="Аватар профиля" />
                 <div className={styles.profileLN}> {/* Profile Login-Name */}
@@ -29,6 +28,7 @@ function UserCard() {
             </div>
         </div>
     </div>
+</a>
   );
 }
 

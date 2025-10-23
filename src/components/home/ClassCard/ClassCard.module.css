@@ -3,6 +3,8 @@
     border-radius: 20px;
     position: relative;
     padding: 16px;
+    transition: all 0.3s ease;
+    &:active {transform: scale(0.98);}
         & .classCardItemInfo {
             gap: 10px;
             display: flex;
@@ -33,18 +35,26 @@
                     }
                     & span {
                         color: var(--foreground-text);
-                        font-size: 15px;
+                        padding-bottom: 3px;
+                        font-size: 13px;
                         font-weight: 600;
                     }
                 }
         }
 }
 
-.classCardLink {
+.classCardLinkIco {
     position: absolute;
     top: 15px;
     right: 15px;
+    color: var(--foreground-text);
 }
+.classCardLink {
+    &:hover {& .classCardLinkIco {transform: scale(1.1);}}
+    text-decoration: none;
+    color: var(--color);
+}
+    
 
 .classCardTime {
     position: absolute;

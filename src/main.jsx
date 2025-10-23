@@ -1,7 +1,8 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import Header from './components/Header/Header'
-import Home from './pages/Home/home'
+import Home from './pages/Home/Home'
+import ContextMenuBlocker from './components/ContextMenuBlocker/ContextMenuBlocker'
 import Watermark from './components/Watermark/Watermark'
 import './index.css'
 
@@ -32,6 +33,7 @@ darkQuery.addEventListener('change', updateTheme);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <ContextMenuBlocker/>
     <Header/>
     <Home/>
     <Watermark/>

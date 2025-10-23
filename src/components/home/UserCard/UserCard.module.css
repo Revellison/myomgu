@@ -9,19 +9,37 @@
     }
 }
 
-.UserCard {
-    background-color: var(--background);
+.UserCardLink {
+    text-decoration: none;
+    color: var(--color);
+    &:hover {
+        & svg {transform: scale(1.1);}
+    }
+}
 
+.UserCard {
+    transition: transform 0.3s ease;
+    background-color: var(--background);
     display: flex;
     border-radius: 20px;
     flex-direction: column;
+    &:active {
+        transform: scale(0.98);
+    }
     & .profileLAN {
+        position: relative;
         display: flex;
         flex-direction: column;
         height: fit-content;
         background-color: var(--foreground);
         padding: 15px;
-        border-radius: 16px;
+        border-radius: 20px;
+        & .classCardLink {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            color: var(--foreground-text);
+        }
         & h1, p{
             margin: 0;
         }
