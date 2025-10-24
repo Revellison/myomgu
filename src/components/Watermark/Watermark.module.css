@@ -8,6 +8,8 @@ footer {
     text-align: center;
     z-index: 9999;
     & a {
+        text-decoration: underline;
+        color: var(--color);
         cursor: pointer;
 }
 

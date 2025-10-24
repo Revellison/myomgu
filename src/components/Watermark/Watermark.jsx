@@ -4,7 +4,7 @@ import ShinyText from "../ShinyText/ShinyText";
 function Watermark() {
   return (
     <footer className={styles.footer}>
-      <a href="https://github.com/Revellison/myomgu"><ShinyText text="Demo by Revellison" disabled={false} speed={3} className='watermark-text'/></a>
+      <a href="https://github.com/Revellison/myomgu">Demo by Revellison</a>
     </footer>
   );
 }

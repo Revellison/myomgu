@@ -132,13 +132,6 @@
   color: var(--foreground-text-dark);
 }
 
-@keyframes Rotate {
-  0% { transform: rotate(0deg); }       
-  50% { transform: rotate(180deg); } 
-  50.1% { transform: rotate(180deg); }
-  100% { transform: rotate(180deg); }
-}
-
 
 .SideBarTop {
   & div {
@@ -157,6 +150,5 @@
   & button {
     margin-bottom: 0;
     height: 100%;
-    animation: Rotate 5s ease infinite;
   }
 }
